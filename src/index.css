@@ -3,3 +3,31 @@
   background: rgb(3, 42, 38);
   padding: 100px;
 }
+
+.dom-model {
+  background: #301934;
+  position: relative;
+  height: 235px;
+  width: 100%;
+
+  align-items: center;
+}
+
+.box-1 {
+  width: 60%;
+  height: 82%;
+  position: absolute;
+  background: #5D3FD3;
+  margin-left: 116px;
+
+
+}
+
+.box-2 {
+  position: absolute;
+  background: #CF9FFF;
+  width: 90%;
+  height: 78%;
+  margin-left: 11px;
+
+}

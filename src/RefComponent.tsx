@@ -7,7 +7,8 @@ const RefComponent = () => {
     const inputText = useRef(null);
     const [inputValue, setInputValue] = useState(null);
     function handleClick() {
-        setInputValue(inputText.current.value)
+        setInputValue(inputText.current.value);
+        inputText.current.value = '';
 
     }
 

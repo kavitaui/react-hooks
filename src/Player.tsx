@@ -20,6 +20,17 @@ const Player = () => {
                     <button onClick={HandleClick}> Set Name</button>
                 </p>
             </div>
+            <div className='dom-model'>
+                dom-model
+                <div className='box-1'>
+                    box-1
+                    <div className='box-2'>
+                        Please select an image
+                        <button>Pick Image</button>
+
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
