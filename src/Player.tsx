@@ -1,15 +1,24 @@
-import React, { useState } from 'react'
 
-const Player = () => {
+import React, { useState } from "react"
+
+
+const Player = ({ title }, { targetTime }) => {
     const [inputtext, setInputtext] = useState('');
     const [submitted, setSubmitted] = useState(false);
+
     function HandleChange(Event) {
         setSubmitted(false);
         setInputtext(Event.target.value)
     }
+
+
     function HandleClick() {
         setSubmitted(true)
 
+    }
+    const filePicker = React.useRef();
+    function handleSatrtPicImage() {
+        filePicker.current.click();
     }
 
     return (
@@ -24,13 +33,19 @@ const Player = () => {
                 dom-model
                 <div className='box-1'>
                     box-1
-                    <div className='box-2'>
+                    <p className='box-2'>
                         Please select an image
-                        <button>Pick Image</button>
+                    </p>
+                    <p>
+                        <input data-testid="file-picker" type="file" accept="image/*" ref={filePicker} />
 
-                    </div>
+
+
+                        <button className='btn' onClick={handleSatrtPicImage}>Pick Image</button>
+                    </p>
                 </div>
             </div>
+
         </>
     )
 }

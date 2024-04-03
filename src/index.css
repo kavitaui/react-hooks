@@ -31,3 +31,13 @@
   margin-left: 11px;
 
 }
+
+.btn {
+
+  position: absolute;
+
+  bottom: 38px;
+  left: 161px;
+  /* color: paleturquoise; */
+  background: purple;
+}
